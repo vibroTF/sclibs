@@ -4,12 +4,13 @@
 class Event
 {
 public:
-	Event(int acId, int inten, int tinte, int dura, int pa);
+	Event(int acId, int inten, int tinte, int dura, int pa, int pb);
 	Event();
 	int acId;
 	int inten;
 	int tinte;
 	int dura;
 	int pa;
+	int pb;
 };
 #endif
