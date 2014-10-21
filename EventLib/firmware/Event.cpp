@@ -2,11 +2,11 @@
 
 Event::Event(int acId, int inten, int tinte, int dura, int pa)
 {
-	double dinten, dtinte;
 	this->acId=acId;
-	this->inten=dinten/100*256;
-	this->tinte=dtinte/100*256;
+	this->inten=inten;
+	this->tinte=tinte;
 	this->dura=dura;
 	this->pa=pa;
 
 }
+Event::Event(){}
