@@ -1,0 +1,15 @@
+<Patterns Count="3">
+	<Pattern ID="1" Count="2">
+	    <Event ActuatorID="0" Intensity="100" Duration="500" pauseAfter="50"/>
+	    <Event ActuatorID="1" Intensity="100" Duration="300" pauseAfter="50"/>
+	</Pattern>
+	<Pattern ID="2" Count="3" Repeat="1">
+	    <Event ActuatorID="0" Intensity="100" Duration="500" pauseAfter="50"/>
+	    <Event ActuatorID="1" Intensity="1" Duration="500" pauseAfter="500"/>
+	    <Event ActuatorID="1" Intensity="20" Duration="500" pauseAfter="500"/>
+	</Pattern>
+	<Pattern ID="3" Count="2" Repeat="3">
+	    <Event ActuatorID="1" Intensity="100" Duration="500" pauseAfter="500"/>
+	    <Event ActuatorID="1" Intensity="100" Duration="300" pauseAfter="50"/>
+	</Pattern>
+</Patterns>
