@@ -65,12 +65,16 @@ public class MainActivity extends Activity {
 		//seekBar_position = (SeekBar) findViewById(R.id.seekBar);
 		log_text = "";
 	
+		//load xml
+		xmlLoader = new XmlLoader(this.getResources().getXml(R.xml.patterns));
+		
 		sparkManager = new SparkManager(this);
+		sparkManager.DEVICE_ID=xmlLoader.devID;
+		sparkManager.ACCESTOKEN=xmlLoader.accToken;
 		initUI();
 		
 	
-		//load xml
-		xmlLoader = new XmlLoader(this.getResources().getXml(R.xml.patterns));
+
 		
 		
 		

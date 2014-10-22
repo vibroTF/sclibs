@@ -11,7 +11,7 @@ import android.util.Log;
 public class XmlLoader {
 	
 	public String devID="";
-	public String devToken="";
+	public String accToken="";
 	
 	public int patternCount=0;
 	public int[] eventCount;
@@ -51,7 +51,8 @@ public class XmlLoader {
 					Log.e(CLASS_TAG, s);
 					if(s.equals("Patterns")){
 						patternCount = xrp.getAttributeIntValue(null,"Count",0);
-						//devID = xrp.getAttributeValue(null,"devID","");
+						devID = xrp.getAttributeValue(null, "DEVICEID");
+						accToken= xrp.getAttributeValue(null, "ACCESSTOKEN");
 						MainActivity.patterns = new ArrayList<Pattern>(patternCount);
 						
 						pId = new int[patternCount];
@@ -64,7 +65,7 @@ public class XmlLoader {
 						repeat[patCnt] = xrp.getAttributeIntValue(null, "Repeat", 0);
 						int anzEvent = xrp.getAttributeIntValue(null,  "Count", 0);
 						eventCount = new int[anzEvent];
-						Log.d(CLASS_TAG,"Fertig mit pattern" + patternCount);
+						Log.d(CLASS_TAG,"Fertig mit pattern" + patCnt);
 						acId=new int[anzEvent][patternCount];
 						intensity=new int[anzEvent][patternCount];
 						targetIntensity=new int[anzEvent][patternCount];

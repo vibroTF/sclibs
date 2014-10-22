@@ -1,4 +1,4 @@
-<Patterns Count="3">
+<Patterns Count="3" DEVICEID="48ff71065067555006342287" ACCESSTOKEN="06c7bf3bf37fb053cfacfb431075d1527afdc25f">
 	<Pattern ID="1" Count="2">
 	    <Event ActuatorID="0" Intensity="100" Duration="500" pauseAfter="50"/>
 	    <Event ActuatorID="1" Intensity="100" Duration="300" pauseAfter="50"/>
